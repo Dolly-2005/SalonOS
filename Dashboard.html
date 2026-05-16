@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BNspire – Salon OS Dashboard</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+
+    <button class="tb-branch">
+      <div class="tb-branch-icon">
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <span class="branch-label">Beauty Salon – Main Branch</span>
+      <svg width="12" height="12" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+
+    <div class="tb-search">
+      <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+          clip-rule="evenodd" />
+      </svg>
+      <input type="text" placeholder="Search customer, mobile, invoice..." />
+      <span class="kb-badge">⌘ K</span>
+    </div>
+
+    <div class="tb-right">
+      <button class="tb-icon-btn" title="Notifications">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+        </svg>
+        <span class="notif-dot">3</span>
+      </button>
+
+      <button class="tb-icon-btn" title="Help">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <button class="tb-profile">
+        <div class="avatar">RK</div>
+        <div class="profile-txt">
+          <span class="profile-name">Rajesh Kumar</span>
+          <span class="profile-role">Owner</span>
+        </div>
+        <svg width="12" height="12" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- ==== PAGE ===== -->
+  <div class="page">
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">Dashboard</h1>
+        <p class="page-sub">Overview of your salon business</p>
+      </div>
+      <button class="date-btn">
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+            clip-rule="evenodd" />
+        </svg>
+        Today, 31 May 2024
+        <svg width="11" height="11" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- ── STAT CARDS ── -->
+    <div class="stat-grid">
+
+      <div class="stat-card">
+        <div class="stat-ico ico-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9.5 9a3 3 0 0 1 5 1c0 2-3 3-3 3" />
+            <line x1="12" y1="17" x2="12.01" y2="17" />
+          </svg>
+        </div>
+        <div class="stat-body">
+          <span class="stat-lbl">Today's Revenue</span>
+          <span class="stat-val">₹ 25,430</span>
+          <span class="stat-chg up">↑ 18% vs yesterday</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-ico ico-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+        </div>
+        <div class="stat-body">
+          <span class="stat-lbl">Appointments</span>
+          <span class="stat-val">32</span>
+          <span class="stat-chg up">↑ 12% vs yesterday</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-ico ico-purple">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </div>
+        <div class="stat-body">
+          <span class="stat-lbl accent">New Customers</span>
+          <span class="stat-val">8</span>
+          <span class="stat-chg up">↑ 14% vs yesterday</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-ico ico-orange">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        </div>
+        <div class="stat-body">
+          <span class="stat-lbl">Repeat Customers</span>
+          <span class="stat-val">24</span>
+          <span class="stat-chg up">↑ 20% vs yesterday</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── MIDDLE ROW ── -->
+    <div class="mid-row">
+
+      <!-- Sales Overview -->
+      <div class="card sales-card">
+        <div class="card-head">
+          <span class="card-title">Sales Overview</span>
+          <button class="filter-btn">
+            This Month
+            <svg width="11" height="11" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="salesChart"></canvas>
+          <div class="chart-pin">
+            <span class="pin-val">₹ 25,430</span>
+            <span class="pin-date">31 May</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Services -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Top Services</span>
+          <button class="filter-btn">
+            This Month
+            <svg width="11" height="11" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="svc-list" id="topSvcList"></ul>
+        <div class="card-foot">
+          <a href="#" id="openSvcModal">View all services →</a>
+        </div>
+      </div>
+
+      <!-- Appointments Summary -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Appointments Summary</span>
+        </div>
+        <div class="donut-wrap">
+          <canvas id="apptChart" width="155" height="155"></canvas>
+          <div class="donut-center">
+            <span class="donut-total">32</span>
+            <span class="donut-lbl">Total</span>
+          </div>
+        </div>
+        <ul class="legend">
+          <li><span class="leg-dot" style="background:#22c55e;"></span>Confirmed<span class="leg-cnt">18 (56%)</span>
+          </li>
+          <li><span class="leg-dot" style="background:#f59e0b;"></span>Pending<span class="leg-cnt">8 (25%)</span></li>
+          <li><span class="leg-dot" style="background:#ef4444;"></span>Cancelled<span class="leg-cnt">3 (10%)</span>
+          </li>
+          <li><span class="leg-dot" style="background:#3b82f6;"></span>Completed<span class="leg-cnt">3 (9%)</span></li>
+        </ul>
+        <div class="card-foot">
+          <a href="#">View all appointments →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── BOTTOM ROW ── -->
+    <div class="bot-row">
+
+      <!-- Recent Appointments -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Recent Appointments</span>
+          <a href="#" class="view-all-link">View all</a>
+        </div>
+        <div class="appt-list">
+          <div class="appt-item">
+            <div class="appt-av av-indigo">PS</div>
+            <div class="appt-meta"><span class="appt-nm">Priya Sharma</span><span class="appt-svc">Hair Cut</span></div>
+            <span class="appt-time">11:00 AM</span>
+            <span class="badge b-green">Confirmed</span>
+          </div>
+          <div class="appt-item">
+            <div class="appt-av av-amber">NP</div>
+            <div class="appt-meta"><span class="appt-nm">Neha Patil</span><span class="appt-svc">Hair Spa</span></div>
+            <span class="appt-time">12:30 PM</span>
+            <span class="badge b-amber">Pending</span>
+          </div>
+          <div class="appt-item">
+            <div class="appt-av av-green">AV</div>
+            <div class="appt-meta"><span class="appt-nm">Anjali Verma</span><span class="appt-svc">Facial</span></div>
+            <span class="appt-time">02:00 PM</span>
+            <span class="badge b-green">Confirmed</span>
+          </div>
+          <div class="appt-item">
+            <div class="appt-av av-red">RS</div>
+            <div class="appt-meta"><span class="appt-nm">Ritika Singh</span><span class="appt-svc">Hair Color</span>
+            </div>
+            <span class="appt-time">04:30 PM</span>
+            <span class="badge b-green">Confirmed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Low Stock Alert -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Low Stock Alert</span>
+          <a href="#" class="view-all-link">View all</a>
+        </div>
+        <div class="stock-list">
+          <div class="stock-item">
+            <div class="stock-ico">🧴</div>
+            <span class="stock-nm">Shampoo</span>
+            <span class="sc-red">5 left</span>
+          </div>
+          <div class="stock-item">
+            <div class="stock-ico">🎨</div>
+            <span class="stock-nm">Hair Color Cream</span>
+            <span class="sc-red">3 left</span>
+          </div>
+          <div class="stock-item">
+            <div class="stock-ico">💧</div>
+            <span class="stock-nm">Hair Serum</span>
+            <span class="sc-amber">4 left</span>
+          </div>
+          <div class="stock-item">
+            <div class="stock-ico">🫧</div>
+            <span class="stock-nm">Face Wash</span>
+            <span class="sc-red">6 left</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="card quick-card">
+        <div class="card-head">
+          <span class="card-title">Quick Actions</span>
+        </div>
+        <div class="quick-grid">
+          <button class="q-btn">
+            <div class="q-ico qi-blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+                <line x1="12" y1="14" x2="12" y2="18" />
+                <line x1="10" y1="16" x2="14" y2="16" />
+              </svg></div>
+            New Appointment
+          </button>
+          <button class="q-btn">
+            <div class="q-ico qi-green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+                <line x1="12" y1="11" x2="12" y2="17" />
+                <line x1="9" y1="14" x2="15" y2="14" />
+              </svg></div>
+            Add Customer
+          </button>
+          <button class="q-btn">
+            <div class="q-ico qi-purple"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg></div>
+            Create Invoice
+          </button>
+          <button class="q-btn">
+            <div class="q-ico qi-orange"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></div>
+            Add Expense
+          </button>
+          <button class="q-btn">
+            <div class="q-ico qi-teal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z" />
+              </svg></div>
+            Add Product
+          </button>
+          <button class="q-btn">
+            <div class="q-ico qi-cyan"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg></div>
+            Send Message
+          </button>
+          <button class="q-btn">
+            <div class="q-ico qi-indigo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg></div>
+            View Reports
+          </button>
+          <button class="q-btn">
+            <div class="q-ico qi-pink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg></div>
+            Staff Attendance
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── TODAY'S SCHEDULE ── -->
+    <div class="card">
+      <div class="card-head">
+        <span class="card-title">Today's Schedule</span>
+        <button class="nav-btn" id="schedRight">›</button>
+      </div>
+      <div class="schedule-outer">
+        <button class="nav-btn" id="schedLeft">‹</button>
+        <div class="schedule-scroll" id="schedScroll">
+          <div class="slot sl-gray"> <span class="slot-time">09:00 AM</span><span class="slot-nm">Sneha
+              Kapoor</span><span class="slot-svc">Hair Cut</span></div>
+          <div class="slot sl-blue"> <span class="slot-time">10:00 AM</span><span class="slot-nm">Ananya
+              Gupta</span><span class="slot-svc">Hair Spa</span></div>
+          <div class="slot sl-green"> <span class="slot-time">11:00 AM</span><span class="slot-nm">Priya
+              Sharma</span><span class="slot-svc">Hair Cut</span></div>
+          <div class="slot sl-yellow"><span class="slot-time">12:00 PM</span><span class="slot-nm">Pooja
+              Mehta</span><span class="slot-svc">Hair Color</span></div>
+          <div class="slot sl-purple"><span class="slot-time">01:00 PM</span><span class="slot-nm">Neha
+              Singh</span><span class="slot-svc">Facial</span></div>
+          <div class="slot sl-blue"> <span class="slot-time">02:00 PM</span><span class="slot-nm">Riya
+              Sharma</span><span class="slot-svc">Hair Spa</span></div>
+          <div class="slot sl-orange"><span class="slot-time">03:00 PM</span><span class="slot-nm">Divya
+              Reddy</span><span class="slot-svc">Cleanup</span></div>
+          <div class="slot sl-teal"> <span class="slot-time">04:00 PM</span><span class="slot-nm">Simran
+              Kaur</span><span class="slot-svc">Keratin</span></div>
+          <div class="slot sl-gray"> <span class="slot-time">05:00 PM</span><span class="slot-nm">Kavita
+              Joshi</span><span class="slot-svc">Hair Cut</span></div>
+        </div>
+        <button class="nav-btn" id="schedRight2">›</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SERVICES MODAL -->
+
+  <div class="modal-overlay" id="svcOverlay">
+    <div class="modal">
+      <div class="modal-head">
+        All Services
+        <button class="modal-close" id="closeSvcModal">×</button>
+      </div>
+      <ul class="svc-list" id="allSvcList"></ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="dashboard.js"></script>
+
+</body>
+
+</html>
